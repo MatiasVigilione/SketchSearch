@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of Comparison" />
+        <Spinner
+            android:id="@+id/comparison_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:id="@+id/ORB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORB distance" />
+
+            <EditText
+                android:id="@+id/ORB_distance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ShapeContext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LogSpace Bins" />
+
+            <EditText
+                android:id="@+id/nbins_r"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LogSpace Min" />
+
+            <EditText
+                android:id="@+id/r_inner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789."
+                android:hint="0"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LogSpace Max" />
+
+            <EditText
+                android:id="@+id/r_outter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789."
+                android:hint="0"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angle Bins" />
+
+            <EditText
+                android:id="@+id/nbins_theta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpleto" />
+
+            <EditText
+                android:id="@+id/simpleto_shapeContext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Q lenght" />
+
+            <EditText
+                android:id="@+id/qlenght"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Hausdorff_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORB distance" />
+
+            <EditText
+                android:id="@+id/simpleto_hausdorff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search by window" />
+        <Spinner
+            android:id="@+id/search_window"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:id="@+id/Window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Window Movement" />
+
+            <EditText
+                android:id="@+id/win_mov"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Window Height(%)" />
+
+            <EditText
+                android:id="@+id/win_height"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Window Width(%)" />
+
+            <EditText
+                android:id="@+id/win_width"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="0"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Save" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

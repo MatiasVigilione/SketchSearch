@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SketchSearch</string>
+    <string-array name="comparison_types_array">
+        <item>ORB</item>
+        <item>ShapeContext</item>
+        <item>Hausdorff distance</item>
+    </string-array>
+    <string-array name="window">
+        <item>Disabled</item>
+        <item>Enabled</item>
+    </string-array>
+</resources>
